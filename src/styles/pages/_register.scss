@@ -1,0 +1,20 @@
+.register-page {
+  .form-register {
+    padding: 100px;
+    width: 250px;
+    margin: 0 auto;
+  }
+  label {
+    padding-bottom: 5px;
+    display: block;
+  }
+  .text-feild-wrap {
+    padding-bottom: 10px;
+  }
+  .login-link {
+    color: blue;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+}

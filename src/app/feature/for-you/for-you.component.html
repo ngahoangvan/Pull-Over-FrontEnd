@@ -1,0 +1,104 @@
+<app-header></app-header>
+<div class="for-you-page">
+  <section class="section-for-you">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div #canvas id="dgcanvas">
+              <div class="text-box" cdkDrag>
+                  <textarea autosize
+                            contentEditable="true"
+                            spellcheck="false"
+                            placeholder="text"
+                            class="text-input"></textarea>
+              </div>
+          </div>
+          <div class="action-wrap">
+            <button id="btnSave" (click)="saveCanvas()" class="btn btn-primary">Save</button>
+            <button id="btnClear" class="btn btn-gray">Clear</button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="option-dg-list-wrap">
+            <ul class="option-dg-list">
+              <li class="dg-item">
+                <div class="option-draw">
+                  <div class="row">
+                    <div class="col-2 btnDraw-wrap">
+                      <button id="btnDraw" class="btn btn-option">
+                        <i class="fas fa-pen"></i>
+                      </button>
+                      <button id="btnFill" class="btn btn-option">
+                        <i class="fas fa-paint-roller"></i>
+                      </button>
+                    </div>
+                    <div class="col-6 color-board">
+                      <ul class="list-color">
+                        <ng-container *ngFor="let color of listColor">
+                          <li [ngStyle]="{'background': color}" class="color-item">{{color}}</li>
+                        </ng-container>
+                      </ul>
+                    </div>
+                    <div class="col-2 current-color-wrap">
+                      <div id="currentColor" class="current-color-border">
+                      </div>
+                    </div>
+                    <div class="col-2">
+                     <input class="weight-input" min="1" value="2" type="number">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="dg-item">
+                <div class="text-option">
+                  <ul class="list-edit-option-text">
+                      <li class="edit-text-item text-edit">
+                        <a class="option-text">T</a>
+                      </li>
+                      <li class="edit-text-item">
+                        <a class="option-text italic"><i class="fas fa-italic"></i></a>
+                      </li>
+                      <li class="edit-text-item">
+                        <a class="option-text bold"><i class="fas fa-bold"></i></a>
+                      </li>
+                      <li class="edit-text-item">
+                        <a class="option-text text-left"><i class="fas fa-align-left"></i></a>
+                      </li>
+                      <li class="edit-text-item">
+                        <a class="option-text text-center"><i class="fas fa-align-center"></i></a>
+                      </li>
+                      <li class="edit-text-item">
+                        <a class="option-text text-right"><i class="fas fa-align-right"></i></a>
+                      </li>
+                      <li class="edit-text-item">
+                        <select class="font-size">
+                          <ng-container *ngFor="let i of listFontSize">
+                            <option value="{{i}}px">{{i}}</option>
+                          </ng-container>
+                        </select>
+                      </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dg-item"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-list-product">
+    <div class="container">
+      <ul *ngIf="listImgUser" class="list-product row">
+        <li *ngFor="let item of listImgUser" class="product-item col-3">
+          <div class="product-border">
+            <div class="img-border">
+              <img class="img-product" src="{{item.url}}" alt="product">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

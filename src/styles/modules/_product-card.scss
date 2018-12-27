@@ -1,0 +1,28 @@
+.product-card {
+  width: 100%;
+  .product-border {
+    width: 100%;
+  }
+  .product-image-border {
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+  }
+  .product-image {
+    width: 100%;
+    margin: 0 auto;
+    transition: all 200ms ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .product-name {
+    font-size: 18px;
+    color: #6b6868;
+    font-family: 'FuturaBT-light';
+  }
+  .product-price {
+    font-size: 18px;
+    font-family: 'FuturaBT-light';
+  }
+}

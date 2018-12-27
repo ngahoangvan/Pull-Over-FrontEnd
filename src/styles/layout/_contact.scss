@@ -1,0 +1,28 @@
+.contact {
+  background: $bg-color-5;
+  border: solid 1px;
+  .contact-wrap {
+    position: relative;
+  }
+  .text-wrap {
+    line-height: 40px;
+  }
+  .contact-border {
+    padding: 40px;
+  }
+  .image-wrap {
+    position: absolute;
+    width: 400px;
+    bottom: 0px;
+    right: 50px;
+  }
+  .banner-phone {
+    width: 100%;
+  }
+  .logo-border {
+    display: inline-block;
+    &:last-child {
+      padding-left: 10px;
+    }
+  }
+}

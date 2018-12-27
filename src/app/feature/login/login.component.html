@@ -1,0 +1,16 @@
+<div class="login-page">
+  <div class="container">
+    <form class="form-login" [formGroup]="formLogin" (ngSubmit)="login(formLogin)">
+      <div class="text-feild-wrap user-name">
+        <label for="username">User Name</label>
+        <input name="username" class="text-feild" type="text" placeholder="User Name" formControlName="username">
+      </div>
+      <div class="text-feild-wrap password">
+        <label for="password">password</label>
+        <input name="password" class="text-feild" type="password" placeholder="Password" formControlName="password">
+      </div>
+      <p routerLink="/register" class="register-link">Register</p>
+      <button class="btn btn-login" type="submit">Login</button>
+    </form>
+  </div>
+</div>

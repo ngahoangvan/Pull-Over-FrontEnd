@@ -1,0 +1,88 @@
+<header class="page-header">
+  <div class="header">
+    <div class="container">
+      <div class="grid-container">
+        <div class="row">
+          <div class="header-left col-6">
+            <ul class="list-social left">
+              <li class="social-item left">
+                <a href="#">
+                  <img class="icon logo-social" src="assets/images/twitter.svg" alt="twitter">
+                </a>
+              </li>
+              <li class="social-item left">
+                <a href="#">
+                  <img class="icon logo-social" src="assets/images/facebook.svg" alt="facebook">
+                </a>
+              </li>
+              <li class="social-item left">
+                <a href="#">
+                  <img class="icon logo-social" src="assets/images/google+.svg" alt="google+">
+                </a>
+              </li>
+              <li class="social-item left">
+                <a href="#">
+                  <img class="icon logo-social" src="assets/images/pinterest-logo.svg" alt="pinterest">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right col-6">
+            <button class="btn btn-primary right">accept</button>
+            <p class="message right">We use cookies to improve your experience on our website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-body">
+    <div class="container">
+      <div class="grid-container">
+        <div class="header-body-wrap row">
+          <div class="col-2">
+            <div class="logo-border">
+              <a routerLink=""><img class="logo" src="assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <nav class="menu-nav col-6">
+            <ul class="list-menu">
+              <li class="menu-item left"><a routerLink="">Home</a></li>
+              <li class="menu-item left"><a href="#">Products</a></li>
+              <li class="menu-item left"><a href="#">Best Sales</a></li>
+              <li class="menu-item left"><a routerLink="/for-you">For You</a></li>
+              <li class="menu-item left"><a href="#">About</a></li>
+              <li class="menu-item left"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <ul class="list-menu-right col-4">
+            <li class="menu-right-item right" (click)="logout()">
+              <a *ngIf="isLogin">
+                <i class="fas fa-sign-out-alt"></i>
+              </a>
+            </li>
+            <li class="menu-right-item right">
+              <a *ngIf="!isLogin" routerLink="/login">
+                <i class="fas fa-user"></i>
+              </a>
+            </li>
+            <li class="menu-right-item right">
+              <a>
+                <img class="icon" src="assets/images/cart.svg" alt="cart-icon">
+              </a>
+            </li>
+            <li class="menu-right-item right">
+              <a href="#">
+                <img class="icon" src="assets/images/info.svg" alt="info-icon">
+              </a>
+            </li>
+            <li class="menu-right-item right">
+              <a>
+                <img class="icon" src="assets/images/search.svg" alt="search-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

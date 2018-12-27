@@ -1,0 +1,73 @@
+<app-header></app-header>
+<div class="page-home">
+  <div class="banner-header"></div>
+  <section class="section-popular-categories">
+    <div class="container">
+      <h2 class="title">Shop popular categories</h2>
+      <div class="list-category-wrap">
+        <div class="row">
+          <ul class="list-categories">
+            <li class="category-item col-3">
+              <div class="tab">
+                <a href="#">Classic T-Shirt</a>
+              </div>
+            </li>
+            <li class="category-item col-3">
+              <div class="tab">
+                <a href="#">Classic T-Shirt</a>
+              </div>
+            </li>
+            <li class="category-item col-3">
+              <div class="tab">
+                <a href="#">Classic T-Shirt</a>
+              </div>
+            </li>
+            <li class="category-item col-3">
+              <div class="tab">
+                <a href="#">Classic T-Shirt</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-new-arrivals">
+    <div class="container">
+      <h2 class="title">New arrivals for you</h2>
+      <app-list-product *ngIf="listProduct" [listProduct]="listProduct"></app-list-product>
+    </div>
+  </section>
+  <section class="section-best-sales">
+    <div class="container">
+      <h2 class="title">Best sales</h2>
+      <app-list-product *ngIf="listProduct" [listProduct]="listProduct"></app-list-product>
+    </div>
+  </section>
+  <section class="introduce-t-shirt">
+    <div class="container">
+      <div class="border-introduce">
+        <div class="row">
+          <div class="col-5">
+            <div class="border-introduce-wrap">
+              <h2 class="title-medium">border-introduce The T-shirt</h2>
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum temporibus,</p>
+              <button class="btn btn-circle">read more</button>
+            </div>
+          </div>
+          <div class="iframe col-7">
+            <iframe width="100%" height="400px"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-contact">
+    <div class="container">
+      <app-contact></app-contact>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

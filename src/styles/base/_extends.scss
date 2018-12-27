@@ -1,0 +1,12 @@
+%clr {
+  &::after {
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+%btn {
+  border: none;
+  outline: none;
+}

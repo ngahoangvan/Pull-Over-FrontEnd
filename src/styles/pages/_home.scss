@@ -1,0 +1,56 @@
+.page-home {
+  .banner-header {
+    height: 300px;
+    background: url('http://techprint.com.au/wp-content/uploads/2014/11/web-Banner.jpg') no-repeat;
+    background-size: cover;
+  }
+  .section-popular-categories,
+  .section-new-arrivals,
+  .section-best-sales,
+  .introduce-t-shirt {
+    padding: 20px 0;
+  }
+  .tab {
+    padding: 40px;
+    color: $w-color;
+    background: $bg-color-4;
+  }
+  .category-item {
+    text-align: center;
+  }
+  .category-item a {
+    box-sizing: border-box;
+    color: $b-color;
+  }
+  .title {
+    padding: 30px 0;
+    float: left;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .border-introduce-wrap {
+    padding-top: 140px;
+    padding-left: 20px;
+    .title-medium {
+      padding-bottom: 20px;
+    }
+    .description {
+      padding-bottom: 22px;
+    }
+  }
+  .border-introduce {
+    border: solid 1px;
+    height: 400px;
+  }
+  .iframe {
+    padding-top: 0;
+  }
+  iframe {
+    border: none;
+  }
+  .section-contact {
+    background: $bg-color-3;
+    padding: 50px 0;
+  }
+}

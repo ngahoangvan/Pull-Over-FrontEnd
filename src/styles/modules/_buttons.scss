@@ -1,0 +1,55 @@
+.btn {
+  @extend %btn;
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: $b-color;
+  padding: 8px 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-gray {
+  background: $gray-color;
+  color: $b-color;
+  padding: 8px 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.btn-border {
+  background: $w-color;
+  color: $b-color;
+  padding: 8px 20px;
+  border: solid 2px;
+  box-sizing: border-box;
+}
+
+.btn-circle {
+  background: $primary-color;
+  color: $b-color;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.btn-option {
+  padding: 12px;
+  font-size: 12px;
+  border: solid 1px;
+  cursor: pointer;
+  background: $w-color;
+  border-radius: 5px;
+  &:hover {
+    background: $primary-color;
+    color: $w-color;
+  }
+}
+
+.btn-login {
+  background-color: $primary-color;
+  padding: 8px 15px;
+}

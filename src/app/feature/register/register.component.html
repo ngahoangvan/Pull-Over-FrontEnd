@@ -1,0 +1,20 @@
+<div class="register-page">
+  <div class="container">
+    <form class="form-register" [formGroup]="formRegister" (ngSubmit)="register(formRegister)">
+      <div class="text-feild-wrap user-name-wrap">
+        <label for="username">User Name</label>
+        <input class="text-feild" type="text" name="username" formControlName="username">
+      </div>
+      <div class="text-feild-wrap password-wrap">
+        <label for="password">password</label>
+        <input class="text-feild" type="password" name="password" formControlName="password">
+      </div>
+      <div class="text-feild-wrap email-wrap">
+        <label for="email">Email</label>
+        <input class="text-feild" type="text" name="Email" formControlName="email">
+      </div>
+      <p routerLink="/login" class="login-link">Login</p>
+      <button class="btn btn-login" type="submit">Register</button>
+    </form>
+  </div>
+</div>
